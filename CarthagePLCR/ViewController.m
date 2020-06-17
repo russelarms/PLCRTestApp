@@ -19,11 +19,15 @@
 
 @implementation ViewController
 
+- (void)crash {
+    @throw [NSException exceptionWithName:NSGenericException reason:@"An uncaught exception! SCREAM."
+    userInfo:@{NSLocalizedDescriptionKey: @"I'm in your program, catching your exceptions!"}];
+}
+
+
 - (void)viewDidLoad {
   [super viewDidLoad];
-
-//  @throw [NSException exceptionWithName:NSGenericException reason:@"An uncaught exception! SCREAM."
-//  userInfo:@{NSLocalizedDescriptionKey: @"I'm in your program, catching your exceptions!"}];
+//  [self crash];
 
   int numClasses;
   Class *classes = NULL;
