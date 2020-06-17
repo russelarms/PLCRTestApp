@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF0259F4247EBD7300ECC2C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0259F3247EBD7300ECC2C5 /* AppDelegate.m */; };
+		DF0259F7247EBD7300ECC2C5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0259F6247EBD7300ECC2C5 /* SceneDelegate.m */; };
+		DF0259FA247EBD7300ECC2C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0259F9247EBD7300ECC2C5 /* ViewController.m */; };
+		DF0259FD247EBD7300ECC2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0259FB247EBD7300ECC2C5 /* Main.storyboard */; };
+		DF0259FF247EBD7700ECC2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0259FE247EBD7700ECC2C5 /* Assets.xcassets */; };
+		DF025A02247EBD7700ECC2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF025A00247EBD7700ECC2C5 /* LaunchScreen.storyboard */; };
+		DF025A05247EBD7700ECC2C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF025A04247EBD7700ECC2C5 /* main.m */; };
+		DFD9F4E4249A217E009B2947 /* MSCrashCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4A8249A217E009B2947 /* MSCrashCustomView.m */; };
+		DFD9F4E5249A217E009B2947 /* MSCrashUndefInst.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4A9249A217E009B2947 /* MSCrashUndefInst.m */; };
+		DFD9F4E6249A217E009B2947 /* MSCrashCorruptMalloc.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4AE249A217E009B2947 /* MSCrashCorruptMalloc.m */; };
+		DFD9F4E7249A217E009B2947 /* MSCrashNXPage.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4B2249A217E009B2947 /* MSCrashNXPage.m */; };
+		DFD9F4E8249A217E009B2947 /* MSCrashAbort.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4B3249A217E009B2947 /* MSCrashAbort.m */; };
+		DFD9F4E9249A217E009B2947 /* MSCrashAsyncSafeThread.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4B5249A217E009B2947 /* MSCrashAsyncSafeThread.m */; };
+		DFD9F4EA249A217E009B2947 /* MSCrashDelayedObjCException.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4B8249A217E009B2947 /* MSCrashDelayedObjCException.m */; };
+		DFD9F4EB249A217E009B2947 /* MSCrashSmashStackBottom.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4BD249A217E009B2947 /* MSCrashSmashStackBottom.m */; };
+		DFD9F4EC249A217E009B2947 /* MSCrashOverwriteLinkRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4C0249A217E009B2947 /* MSCrashOverwriteLinkRegister.m */; };
+		DFD9F4EE249A217E009B2947 /* MSCrashObjCMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4C2249A217E009B2947 /* MSCrashObjCMsgSend.m */; };
+		DFD9F4EF249A217E009B2947 /* MSFramelessDWARF_arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4C3249A217E009B2947 /* MSFramelessDWARF_arm64.s */; };
+		DFD9F4F0249A217E009B2947 /* MSCrashNULL.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4C5249A217E009B2947 /* MSCrashNULL.m */; };
+		DFD9F4F1249A217E009B2947 /* MSCrashStackGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4C7249A217E009B2947 /* MSCrashStackGuard.m */; };
+		DFD9F4F2249A217E009B2947 /* MSCrashPrivInst.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4C8249A217E009B2947 /* MSCrashPrivInst.m */; };
+		DFD9F4F3249A217E009B2947 /* MSCrashCXXException.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4CB249A217E009B2947 /* MSCrashCXXException.mm */; };
+		DFD9F4F4249A217E009B2947 /* MSCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4CC249A217E009B2947 /* MSCrash.m */; };
+		DFD9F4F5249A217E009B2947 /* MSCrashROPage.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4CE249A217E009B2947 /* MSCrashROPage.m */; };
+		DFD9F4F6249A217E009B2947 /* MSCrashSmashStackTop.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4D1249A217E009B2947 /* MSCrashSmashStackTop.m */; };
+		DFD9F4F7249A217E009B2947 /* MSCrashObjCException.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4D2249A217E009B2947 /* MSCrashObjCException.m */; };
+		DFD9F4F8249A217E009B2947 /* MSCrashTrap.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4D3249A217E009B2947 /* MSCrashTrap.m */; };
+		DFD9F4F9249A217E009B2947 /* MSFramelessDWARF_arm32.S in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4D5249A217E009B2947 /* MSFramelessDWARF_arm32.S */; };
+		DFD9F4FA249A217E009B2947 /* MSCrashCorruptObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4D6249A217E009B2947 /* MSCrashCorruptObjC.m */; };
+		DFD9F4FB249A217E009B2947 /* MSCrashGarbage.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4D7249A217E009B2947 /* MSCrashGarbage.m */; };
+		DFD9F4FC249A217E009B2947 /* MSCrashFramelessDWARF.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4D8249A217E009B2947 /* MSCrashFramelessDWARF.m */; };
+		DFD9F4FD249A217F009B2947 /* MSCrashReleasedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4DA249A217E009B2947 /* MSCrashReleasedObject.m */; };
+		DFD9F4FE249A217F009B2947 /* MSCrashNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4DC249A217E009B2947 /* MSCrashNSLog.m */; };
+		DFD9F4FF249A217F009B2947 /* MSFramelessDWARF_i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4DD249A217E009B2947 /* MSFramelessDWARF_i386.s */; };
+		DFD9F500249A217F009B2947 /* MSFramelessDWARF_x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4DF249A217E009B2947 /* MSFramelessDWARF_x86_64.s */; };
+		DFD9F502249A217F009B2947 /* MSCrashCXXCustomException.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4E1249A217E009B2947 /* MSCrashCXXCustomException.mm */; };
+		DFD9F503249A217F009B2947 /* MSCrashOutOfMemory.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFD9F4E2249A217E009B2947 /* MSCrashOutOfMemory.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFD9F48A249A1C02009B2947 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DF0259EF247EBD7300ECC2C5 /* CarthagePLCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthagePLCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0259F2247EBD7300ECC2C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF0259F3247EBD7300ECC2C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF0259F5247EBD7300ECC2C5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DF0259F6247EBD7300ECC2C5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DF0259F8247EBD7300ECC2C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF0259F9247EBD7300ECC2C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF0259FC247EBD7300ECC2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF0259FE247EBD7700ECC2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF025A01247EBD7700ECC2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF025A03247EBD7700ECC2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF025A04247EBD7700ECC2C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF025A0D247EC0AD00ECC2C5 /* CarthagePLCR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarthagePLCR.entitlements; sourceTree = "<group>"; };
+		DFD9F4A8249A217E009B2947 /* MSCrashCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashCustomView.m; sourceTree = "<group>"; };
+		DFD9F4A9249A217E009B2947 /* MSCrashUndefInst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashUndefInst.m; sourceTree = "<group>"; };
+		DFD9F4AA249A217E009B2947 /* MSCrashPrivInst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashPrivInst.h; sourceTree = "<group>"; };
+		DFD9F4AB249A217E009B2947 /* MSCrashStackGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashStackGuard.h; sourceTree = "<group>"; };
+		DFD9F4AC249A217E009B2947 /* MSCrashCXXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashCXXException.h; sourceTree = "<group>"; };
+		DFD9F4AD249A217E009B2947 /* MSCrashNULL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashNULL.h; sourceTree = "<group>"; };
+		DFD9F4AE249A217E009B2947 /* MSCrashCorruptMalloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashCorruptMalloc.m; sourceTree = "<group>"; };
+		DFD9F4AF249A217E009B2947 /* MSCrashSmashStackTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashSmashStackTop.h; sourceTree = "<group>"; };
+		DFD9F4B0249A217E009B2947 /* MSCrashObjCException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashObjCException.h; sourceTree = "<group>"; };
+		DFD9F4B1249A217E009B2947 /* MSCrashROPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashROPage.h; sourceTree = "<group>"; };
+		DFD9F4B2249A217E009B2947 /* MSCrashNXPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashNXPage.m; sourceTree = "<group>"; };
+		DFD9F4B3249A217E009B2947 /* MSCrashAbort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashAbort.m; sourceTree = "<group>"; };
+		DFD9F4B4249A217E009B2947 /* MSCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrash.h; sourceTree = "<group>"; };
+		DFD9F4B5249A217E009B2947 /* MSCrashAsyncSafeThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashAsyncSafeThread.m; sourceTree = "<group>"; };
+		DFD9F4B6249A217E009B2947 /* MSCrashNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashNSLog.h; sourceTree = "<group>"; };
+		DFD9F4B7249A217E009B2947 /* MSCrashReleasedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashReleasedObject.h; sourceTree = "<group>"; };
+		DFD9F4B8249A217E009B2947 /* MSCrashDelayedObjCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashDelayedObjCException.m; sourceTree = "<group>"; };
+		DFD9F4B9249A217E009B2947 /* MSCrashFramelessDWARF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashFramelessDWARF.h; sourceTree = "<group>"; };
+		DFD9F4BA249A217E009B2947 /* MSCrashOutOfMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashOutOfMemory.h; sourceTree = "<group>"; };
+		DFD9F4BB249A217E009B2947 /* MSCrashGarbage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashGarbage.h; sourceTree = "<group>"; };
+		DFD9F4BC249A217E009B2947 /* MSCrashCorruptObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashCorruptObjC.h; sourceTree = "<group>"; };
+		DFD9F4BD249A217E009B2947 /* MSCrashSmashStackBottom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashSmashStackBottom.m; sourceTree = "<group>"; };
+		DFD9F4BE249A217E009B2947 /* MSCrashTrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashTrap.h; sourceTree = "<group>"; };
+		DFD9F4BF249A217E009B2947 /* CrashLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashLib.h; sourceTree = "<group>"; };
+		DFD9F4C0249A217E009B2947 /* MSCrashOverwriteLinkRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashOverwriteLinkRegister.m; sourceTree = "<group>"; };
+		DFD9F4C2249A217E009B2947 /* MSCrashObjCMsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashObjCMsgSend.m; sourceTree = "<group>"; };
+		DFD9F4C3249A217E009B2947 /* MSFramelessDWARF_arm64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = MSFramelessDWARF_arm64.s; sourceTree = "<group>"; };
+		DFD9F4C4249A217E009B2947 /* MSCrashCorruptMalloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashCorruptMalloc.h; sourceTree = "<group>"; };
+		DFD9F4C5249A217E009B2947 /* MSCrashNULL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashNULL.m; sourceTree = "<group>"; };
+		DFD9F4C6249A217E009B2947 /* MSCrashCXXCustomException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashCXXCustomException.h; sourceTree = "<group>"; };
+		DFD9F4C7249A217E009B2947 /* MSCrashStackGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashStackGuard.m; sourceTree = "<group>"; };
+		DFD9F4C8249A217E009B2947 /* MSCrashPrivInst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashPrivInst.m; sourceTree = "<group>"; };
+		DFD9F4C9249A217E009B2947 /* MSCrashCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashCustomView.h; sourceTree = "<group>"; };
+		DFD9F4CA249A217E009B2947 /* MSCrashUndefInst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashUndefInst.h; sourceTree = "<group>"; };
+		DFD9F4CB249A217E009B2947 /* MSCrashCXXException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MSCrashCXXException.mm; sourceTree = "<group>"; };
+		DFD9F4CC249A217E009B2947 /* MSCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrash.m; sourceTree = "<group>"; };
+		DFD9F4CD249A217E009B2947 /* MSCrashAbort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashAbort.h; sourceTree = "<group>"; };
+		DFD9F4CE249A217E009B2947 /* MSCrashROPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashROPage.m; sourceTree = "<group>"; };
+		DFD9F4CF249A217E009B2947 /* CrashLib-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CrashLib-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFD9F4D0249A217E009B2947 /* MSCrashNXPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashNXPage.h; sourceTree = "<group>"; };
+		DFD9F4D1249A217E009B2947 /* MSCrashSmashStackTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashSmashStackTop.m; sourceTree = "<group>"; };
+		DFD9F4D2249A217E009B2947 /* MSCrashObjCException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashObjCException.m; sourceTree = "<group>"; };
+		DFD9F4D3249A217E009B2947 /* MSCrashTrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashTrap.m; sourceTree = "<group>"; };
+		DFD9F4D4249A217E009B2947 /* MSCrashSmashStackBottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashSmashStackBottom.h; sourceTree = "<group>"; };
+		DFD9F4D5249A217E009B2947 /* MSFramelessDWARF_arm32.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = MSFramelessDWARF_arm32.S; sourceTree = "<group>"; };
+		DFD9F4D6249A217E009B2947 /* MSCrashCorruptObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashCorruptObjC.m; sourceTree = "<group>"; };
+		DFD9F4D7249A217E009B2947 /* MSCrashGarbage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashGarbage.m; sourceTree = "<group>"; };
+		DFD9F4D8249A217E009B2947 /* MSCrashFramelessDWARF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashFramelessDWARF.m; sourceTree = "<group>"; };
+		DFD9F4D9249A217E009B2947 /* MSCrashDelayedObjCException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashDelayedObjCException.h; sourceTree = "<group>"; };
+		DFD9F4DA249A217E009B2947 /* MSCrashReleasedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashReleasedObject.m; sourceTree = "<group>"; };
+		DFD9F4DB249A217E009B2947 /* MSCrashAsyncSafeThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashAsyncSafeThread.h; sourceTree = "<group>"; };
+		DFD9F4DC249A217E009B2947 /* MSCrashNSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCrashNSLog.m; sourceTree = "<group>"; };
+		DFD9F4DD249A217E009B2947 /* MSFramelessDWARF_i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = MSFramelessDWARF_i386.s; sourceTree = "<group>"; };
+		DFD9F4DE249A217E009B2947 /* MSCrashObjCMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashObjCMsgSend.h; sourceTree = "<group>"; };
+		DFD9F4DF249A217E009B2947 /* MSFramelessDWARF_x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = MSFramelessDWARF_x86_64.s; sourceTree = "<group>"; };
+		DFD9F4E0249A217E009B2947 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD9F4E1249A217E009B2947 /* MSCrashCXXCustomException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MSCrashCXXCustomException.mm; sourceTree = "<group>"; };
+		DFD9F4E2249A217E009B2947 /* MSCrashOutOfMemory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MSCrashOutOfMemory.mm; sourceTree = "<group>"; };
+		DFD9F4E3249A217E009B2947 /* MSCrashOverwriteLinkRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCrashOverwriteLinkRegister.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF0259EC247EBD7300ECC2C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF0259E6247EBD7300ECC2C5 = {
+			isa = PBXGroup;
+			children = (
+				DF0259F1247EBD7300ECC2C5 /* CarthagePLCR */,
+				DF0259F0247EBD7300ECC2C5 /* Products */,
+				DFD9F487249A1C02009B2947 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF0259F0247EBD7300ECC2C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF0259EF247EBD7300ECC2C5 /* CarthagePLCR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF0259F1247EBD7300ECC2C5 /* CarthagePLCR */ = {
+			isa = PBXGroup;
+			children = (
+				DFD9F4A7249A217E009B2947 /* CrashLib */,
+				DF025A0D247EC0AD00ECC2C5 /* CarthagePLCR.entitlements */,
+				DF0259F2247EBD7300ECC2C5 /* AppDelegate.h */,
+				DF0259F3247EBD7300ECC2C5 /* AppDelegate.m */,
+				DF0259F5247EBD7300ECC2C5 /* SceneDelegate.h */,
+				DF0259F6247EBD7300ECC2C5 /* SceneDelegate.m */,
+				DF0259F8247EBD7300ECC2C5 /* ViewController.h */,
+				DF0259F9247EBD7300ECC2C5 /* ViewController.m */,
+				DF0259FB247EBD7300ECC2C5 /* Main.storyboard */,
+				DF0259FE247EBD7700ECC2C5 /* Assets.xcassets */,
+				DF025A00247EBD7700ECC2C5 /* LaunchScreen.storyboard */,
+				DF025A03247EBD7700ECC2C5 /* Info.plist */,
+				DF025A04247EBD7700ECC2C5 /* main.m */,
+			);
+			path = CarthagePLCR;
+			sourceTree = "<group>";
+		};
+		DFD9F487249A1C02009B2947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD9F4A7249A217E009B2947 /* CrashLib */ = {
+			isa = PBXGroup;
+			children = (
+				DFD9F4A8249A217E009B2947 /* MSCrashCustomView.m */,
+				DFD9F4A9249A217E009B2947 /* MSCrashUndefInst.m */,
+				DFD9F4AA249A217E009B2947 /* MSCrashPrivInst.h */,
+				DFD9F4AB249A217E009B2947 /* MSCrashStackGuard.h */,
+				DFD9F4AC249A217E009B2947 /* MSCrashCXXException.h */,
+				DFD9F4AD249A217E009B2947 /* MSCrashNULL.h */,
+				DFD9F4AE249A217E009B2947 /* MSCrashCorruptMalloc.m */,
+				DFD9F4AF249A217E009B2947 /* MSCrashSmashStackTop.h */,
+				DFD9F4B0249A217E009B2947 /* MSCrashObjCException.h */,
+				DFD9F4B1249A217E009B2947 /* MSCrashROPage.h */,
+				DFD9F4B2249A217E009B2947 /* MSCrashNXPage.m */,
+				DFD9F4B3249A217E009B2947 /* MSCrashAbort.m */,
+				DFD9F4B4249A217E009B2947 /* MSCrash.h */,
+				DFD9F4B5249A217E009B2947 /* MSCrashAsyncSafeThread.m */,
+				DFD9F4B6249A217E009B2947 /* MSCrashNSLog.h */,
+				DFD9F4B7249A217E009B2947 /* MSCrashReleasedObject.h */,
+				DFD9F4B8249A217E009B2947 /* MSCrashDelayedObjCException.m */,
+				DFD9F4B9249A217E009B2947 /* MSCrashFramelessDWARF.h */,
+				DFD9F4BA249A217E009B2947 /* MSCrashOutOfMemory.h */,
+				DFD9F4BB249A217E009B2947 /* MSCrashGarbage.h */,
+				DFD9F4BC249A217E009B2947 /* MSCrashCorruptObjC.h */,
+				DFD9F4BD249A217E009B2947 /* MSCrashSmashStackBottom.m */,
+				DFD9F4BE249A217E009B2947 /* MSCrashTrap.h */,
+				DFD9F4BF249A217E009B2947 /* CrashLib.h */,
+				DFD9F4C0249A217E009B2947 /* MSCrashOverwriteLinkRegister.m */,
+				DFD9F4C2249A217E009B2947 /* MSCrashObjCMsgSend.m */,
+				DFD9F4C3249A217E009B2947 /* MSFramelessDWARF_arm64.s */,
+				DFD9F4C4249A217E009B2947 /* MSCrashCorruptMalloc.h */,
+				DFD9F4C5249A217E009B2947 /* MSCrashNULL.m */,
+				DFD9F4C6249A217E009B2947 /* MSCrashCXXCustomException.h */,
+				DFD9F4C7249A217E009B2947 /* MSCrashStackGuard.m */,
+				DFD9F4C8249A217E009B2947 /* MSCrashPrivInst.m */,
+				DFD9F4C9249A217E009B2947 /* MSCrashCustomView.h */,
+				DFD9F4CA249A217E009B2947 /* MSCrashUndefInst.h */,
+				DFD9F4CB249A217E009B2947 /* MSCrashCXXException.mm */,
+				DFD9F4CC249A217E009B2947 /* MSCrash.m */,
+				DFD9F4CD249A217E009B2947 /* MSCrashAbort.h */,
+				DFD9F4CE249A217E009B2947 /* MSCrashROPage.m */,
+				DFD9F4CF249A217E009B2947 /* CrashLib-Bridging-Header.h */,
+				DFD9F4D0249A217E009B2947 /* MSCrashNXPage.h */,
+				DFD9F4D1249A217E009B2947 /* MSCrashSmashStackTop.m */,
+				DFD9F4D2249A217E009B2947 /* MSCrashObjCException.m */,
+				DFD9F4D3249A217E009B2947 /* MSCrashTrap.m */,
+				DFD9F4D4249A217E009B2947 /* MSCrashSmashStackBottom.h */,
+				DFD9F4D5249A217E009B2947 /* MSFramelessDWARF_arm32.S */,
+				DFD9F4D6249A217E009B2947 /* MSCrashCorruptObjC.m */,
+				DFD9F4D7249A217E009B2947 /* MSCrashGarbage.m */,
+				DFD9F4D8249A217E009B2947 /* MSCrashFramelessDWARF.m */,
+				DFD9F4D9249A217E009B2947 /* MSCrashDelayedObjCException.h */,
+				DFD9F4DA249A217E009B2947 /* MSCrashReleasedObject.m */,
+				DFD9F4DB249A217E009B2947 /* MSCrashAsyncSafeThread.h */,
+				DFD9F4DC249A217E009B2947 /* MSCrashNSLog.m */,
+				DFD9F4DD249A217E009B2947 /* MSFramelessDWARF_i386.s */,
+				DFD9F4DE249A217E009B2947 /* MSCrashObjCMsgSend.h */,
+				DFD9F4DF249A217E009B2947 /* MSFramelessDWARF_x86_64.s */,
+				DFD9F4E0249A217E009B2947 /* Info.plist */,
+				DFD9F4E1249A217E009B2947 /* MSCrashCXXCustomException.mm */,
+				DFD9F4E2249A217E009B2947 /* MSCrashOutOfMemory.mm */,
+				DFD9F4E3249A217E009B2947 /* MSCrashOverwriteLinkRegister.h */,
+			);
+			path = CrashLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF0259EE247EBD7300ECC2C5 /* CarthagePLCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF025A08247EBD7700ECC2C5 /* Build configuration list for PBXNativeTarget "CarthagePLCR" */;
+			buildPhases = (
+				DF0259EB247EBD7300ECC2C5 /* Sources */,
+				DF0259EC247EBD7300ECC2C5 /* Frameworks */,
+				DF0259ED247EBD7300ECC2C5 /* Resources */,
+				DFD9F48A249A1C02009B2947 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarthagePLCR;
+			packageProductDependencies = (
+			);
+			productName = CarthagePLCR;
+			productReference = DF0259EF247EBD7300ECC2C5 /* CarthagePLCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF0259E7247EBD7300ECC2C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ruslan Urmeev";
+				TargetAttributes = {
+					DF0259EE247EBD7300ECC2C5 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = DF0259EA247EBD7300ECC2C5 /* Build configuration list for PBXProject "CarthagePLCR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF0259E6247EBD7300ECC2C5;
+			packageReferences = (
+			);
+			productRefGroup = DF0259F0247EBD7300ECC2C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF0259EE247EBD7300ECC2C5 /* CarthagePLCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF0259ED247EBD7300ECC2C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF025A02247EBD7700ECC2C5 /* LaunchScreen.storyboard in Resources */,
+				DF0259FF247EBD7700ECC2C5 /* Assets.xcassets in Resources */,
+				DF0259FD247EBD7300ECC2C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF0259EB247EBD7300ECC2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD9F4F0249A217E009B2947 /* MSCrashNULL.m in Sources */,
+				DFD9F4EB249A217E009B2947 /* MSCrashSmashStackBottom.m in Sources */,
+				DFD9F4F8249A217E009B2947 /* MSCrashTrap.m in Sources */,
+				DFD9F4F1249A217E009B2947 /* MSCrashStackGuard.m in Sources */,
+				DFD9F4FC249A217E009B2947 /* MSCrashFramelessDWARF.m in Sources */,
+				DFD9F4FE249A217F009B2947 /* MSCrashNSLog.m in Sources */,
+				DFD9F4FA249A217E009B2947 /* MSCrashCorruptObjC.m in Sources */,
+				DFD9F4FD249A217F009B2947 /* MSCrashReleasedObject.m in Sources */,
+				DFD9F503249A217F009B2947 /* MSCrashOutOfMemory.mm in Sources */,
+				DFD9F4E5249A217E009B2947 /* MSCrashUndefInst.m in Sources */,
+				DFD9F4F5249A217E009B2947 /* MSCrashROPage.m in Sources */,
+				DFD9F4E9249A217E009B2947 /* MSCrashAsyncSafeThread.m in Sources */,
+				DFD9F500249A217F009B2947 /* MSFramelessDWARF_x86_64.s in Sources */,
+				DFD9F4F7249A217E009B2947 /* MSCrashObjCException.m in Sources */,
+				DFD9F502249A217F009B2947 /* MSCrashCXXCustomException.mm in Sources */,
+				DF0259FA247EBD7300ECC2C5 /* ViewController.m in Sources */,
+				DFD9F4E6249A217E009B2947 /* MSCrashCorruptMalloc.m in Sources */,
+				DF0259F4247EBD7300ECC2C5 /* AppDelegate.m in Sources */,
+				DFD9F4FB249A217E009B2947 /* MSCrashGarbage.m in Sources */,
+				DFD9F4F6249A217E009B2947 /* MSCrashSmashStackTop.m in Sources */,
+				DFD9F4E4249A217E009B2947 /* MSCrashCustomView.m in Sources */,
+				DFD9F4EF249A217E009B2947 /* MSFramelessDWARF_arm64.s in Sources */,
+				DFD9F4EE249A217E009B2947 /* MSCrashObjCMsgSend.m in Sources */,
+				DFD9F4EA249A217E009B2947 /* MSCrashDelayedObjCException.m in Sources */,
+				DFD9F4F3249A217E009B2947 /* MSCrashCXXException.mm in Sources */,
+				DFD9F4FF249A217F009B2947 /* MSFramelessDWARF_i386.s in Sources */,
+				DFD9F4E8249A217E009B2947 /* MSCrashAbort.m in Sources */,
+				DF025A05247EBD7700ECC2C5 /* main.m in Sources */,
+				DFD9F4E7249A217E009B2947 /* MSCrashNXPage.m in Sources */,
+				DFD9F4F9249A217E009B2947 /* MSFramelessDWARF_arm32.S in Sources */,
+				DFD9F4F2249A217E009B2947 /* MSCrashPrivInst.m in Sources */,
+				DFD9F4EC249A217E009B2947 /* MSCrashOverwriteLinkRegister.m in Sources */,
+				DFD9F4F4249A217E009B2947 /* MSCrash.m in Sources */,
+				DF0259F7247EBD7300ECC2C5 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF0259FB247EBD7300ECC2C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF0259FC247EBD7300ECC2C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF025A00247EBD7700ECC2C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF025A01247EBD7700ECC2C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF025A06247EBD7700ECC2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF025A07247EBD7700ECC2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF025A09247EBD7700ECC2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CarthagePLCR/CarthagePLCR.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = CarthagePLCR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plcrTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF025A0A247EBD7700ECC2C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CarthagePLCR/CarthagePLCR.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Static",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = CarthagePLCR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.plcrTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF0259EA247EBD7300ECC2C5 /* Build configuration list for PBXProject "CarthagePLCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF025A06247EBD7700ECC2C5 /* Debug */,
+				DF025A07247EBD7700ECC2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF025A08247EBD7700ECC2C5 /* Build configuration list for PBXNativeTarget "CarthagePLCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF025A09247EBD7700ECC2C5 /* Debug */,
+				DF025A0A247EBD7700ECC2C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF0259E7247EBD7300ECC2C5 /* Project object */;
+}
