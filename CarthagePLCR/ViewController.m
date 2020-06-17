@@ -27,7 +27,6 @@
 
   classes = NULL;
   numClasses = objc_getClassList(NULL, 0);
-  NSLog(@"Number of classes: %d", numClasses);
 
   if (numClasses > 0 )
   {
