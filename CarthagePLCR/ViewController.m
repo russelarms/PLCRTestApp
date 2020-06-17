@@ -43,7 +43,12 @@
       free(classes);
   }
 
-  _allCrashes = [MSCrash allCrashes];
+  NSArray *crashes = [MSCrash allCrashes];
+
+  NSSortDescriptor *sortDescriptor;
+  sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"title"
+                                             ascending:YES];
+  _allCrashes = [crashes sortedArrayUsingDescriptors:@[sortDescriptor]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
