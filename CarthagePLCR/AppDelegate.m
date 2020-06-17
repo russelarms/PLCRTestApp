@@ -18,12 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
-  PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];
+
+//  PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];
+
+  PLCrashReporter *crashReporter = [[PLCrashReporter alloc] initWithConfiguration:[[PLCrashReporterConfig alloc] initWithSignalHandlerType:PLCrashReporterSignalHandlerTypeBSD symbolicationStrategy:PLCrashReporterSymbolicationStrategyAll]];
+//
   NSError *error;
 
   // Check if we previously crashed
   if ([crashReporter hasPendingCrashReport])
-      [self handleCrashReport];
+    [self handleCrashReport:crashReporter];
 
   // Enable the Crash Reporter
   if (![crashReporter enableCrashReporterAndReturnError: &error])
@@ -35,8 +39,7 @@
 //
 // Called to handle a pending crash report.
 //
-- (void) handleCrashReport {
-    PLCrashReporter *crashReporter = [PLCrashReporter sharedReporter];
+- (void) handleCrashReport:(PLCrashReporter*)crashReporter {
     NSData *crashData;
     NSError *error;
 
@@ -55,9 +58,13 @@
         return;
     }
 
+
     NSLog(@"Crashed on %@", report.systemInfo.timestamp);
     NSLog(@"Crashed with signal %@ (code %@, address=0x%" PRIx64 ")", report.signalInfo.name,
           report.signalInfo.code, report.signalInfo.address);
+
+  NSString *text = [PLCrashReportTextFormatter stringValueForCrashReport: report withTextFormat: PLCrashReportTextFormatiOS];
+  NSLog(text);
 
     // Purge the report
     [crashReporter purgePendingCrashReport];
